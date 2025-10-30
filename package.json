@@ -1,0 +1,13 @@
+{
+  "name": "jira-standup",
+  "version": "1.0.0",
+  "description": "Generate daily standup reports from Jira",
+  "main": "standup.js",
+  "scripts": {
+    "start": "node standup.js"
+  },
+  "keywords": ["jira", "standup", "report"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}

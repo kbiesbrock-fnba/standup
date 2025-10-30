@@ -1,0 +1,11 @@
+services:
+  standup:
+    build: .
+    environment:
+      - JIRA_EMAIL=${JIRA_EMAIL}
+      - JIRA_API_TOKEN=${JIRA_API_TOKEN}
+      - JIRA_DOMAIN=${JIRA_DOMAIN:-fnba.atlassian.net}
+      - TZ=${TZ:-America/New_York}
+    volumes:
+      - ./dailies:/output
+    restart: "no"
